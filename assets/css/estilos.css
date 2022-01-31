@@ -1,0 +1,261 @@
+:root {
+    --background: peru;
+    --header-arriba: rgba(0, 0, 0, 0.3);
+    --color-texto-general: #000;
+    --background-contenedor: rgba(0, 0, 0, 0.2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background-color: var(--background);
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--color-texto-general)
+}
+
+/* -------------------------------------
+Header
+------------------------------------- */
+header {
+    transition: ease-in-out 0.3s;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    z-index: 997;
+    overflow-y: auto;
+    padding: 20px;
+    margin: 0 50px;
+    overflow: hidden;
+}
+header .contenedor h1, header .contenedor p{
+    margin: 10px;
+}
+
+header .contenedor p span:hover {
+    transform: translateY(-2%);
+    text-decoration: underline 2px;
+}
+
+/* Barra de redes sociales */
+#header .contenedor .redes-sociales {
+    /* justify-content: center; */
+    margin-top: 30px;
+    display: flex;
+}
+
+#header .contenedor .redes-sociales a {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  line-height: 1;
+  margin-right: 8px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+#header .contenedor .redes-sociales a:hover {
+  background: #18d26e;
+}
+
+/* Barra de navehación */
+
+header .contenedor nav ul {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+header .contenedor nav button {
+    background-color: transparent;
+    border: none;
+    letter-spacing: 5px;
+    cursor: pointer;
+    padding: 10px 15px 5px;
+    transition: all 200ms ease-out;
+}
+
+header .contenedor nav button:hover, header .contenedor nav .activo{
+    transform: translateY(-2%);
+    text-decoration: underline 2px;
+    /* background-color: rgba(0,0,0,.1); */
+    /* border-bottom: 3px solid black; */
+    /* width: 25px; */
+    transition: all 300ms ease-in-out 0;
+}
+
+/* Header contraído */
+.header-arriba {
+    /* visibility: hidden; */
+    height: 80px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: var(--header-arriba);
+    margin: 0;
+}
+
+.header-arriba .contenedor {
+    display: flex;
+    align-items: center;
+}
+
+.header-arriba .contenedor p, .header-arriba .contenedor .redes-sociales {
+    visibility: hidden;
+    display: none;
+}
+
+.header-arriba .contenedor nav{
+    align-items: center;
+}
+
+/* ----------------------------------
+Ajustes generales de sección
+---------------------------------- */
+
+section {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 120px;
+    bottom: 100%;
+    opacity: 0;
+    transition: ease-in 0.4s;
+    z-index: 2;
+}
+
+body .seccion-activa {
+    top: 100px;
+    bottom: auto;
+    opacity: 1;
+    padding-bottom: 45px;
+}
+
+body .seccion-activa .contenedor {
+    background-color: var(--background-contenedor);
+    width: 80%;
+    padding: 40px;
+    margin: 30px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    
+}
+
+body section .contenedor .seccion-titulo h1{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 20px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+}
+
+body section .contenedor .seccion-titulo p {
+    margin: 0;
+    margin: -15px 0 15px 0;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+/* -----------------------------
+Sección Acerca de 
+------------------------------*/
+
+#acerca-de .contenedor .general {
+    display: flex;
+    margin: 20px;
+}
+
+#acerca-de .contenedor .general .foto-personal{
+    margin: 15px;
+}
+
+#acerca-de .contenedor .general .informacion-general{
+    margin: 10px;
+}
+
+#acerca-de .contenedor .general .informacion-general h3{
+    padding: 5px;
+}
+
+#acerca-de .contenedor .general .informacion-general p{
+    padding: 5px;
+}
+
+#acerca-de .contenedor .general .informacion-general ul{
+    list-style: none;
+    padding: 0;
+}
+
+#acerca-de .contenedor .general .informacion-general ul ion-icon{
+    font-size: 20px;
+    padding-right: 2px;
+    color: #000;
+}
+
+/* Habilidades */
+
+#acerca-de .contenedor .habilidades h3{
+    padding-bottom: 5px;
+}
+
+#acerca-de .contenedor .habilidades .caja-de-habilidades h4{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+#acerca-de .contenedor .habilidades .caja-de-habilidades .habilidad-barra .barra-de-progreso{
+    background-color: #1a1a1a;
+    height: 25px;
+    padding: 5px;
+    width: 350px;
+    /* margin: 50px 0;          */
+    border-radius: 5px;
+    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;  
+}
+
+#acerca-de .contenedor .habilidades .caja-de-habilidades .habilidad-barra .barra-de-progreso span {
+    display: inline-block;
+    height: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+    transition: width .4s ease-in-out; 
+    background-color: #ccc;   
+}
+
+
+/* -----------------------------
+Sección Acerca de 
+------------------------------*/
+
+/* -----------------------------
+Sección CV
+------------------------------*/
+
+/* -----------------------------
+Sección Portafolio 
+------------------------------*/
+
+/* -----------------------------
+Sección contacto
+------------------------------*/
+

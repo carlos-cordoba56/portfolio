@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Cordoba - Portafolio</title>
+    <link rel="stylesheet" href="/assets/css/estilos.css">
+</head>
+<body>
+    <header id='header' class="">
+        <div class="contenedor">
+            <h1>Carlos Andrés Córdoba Q.</h1>
+            <p>Soy un <span>ingeniero Mecatrónico || desarrollador</span> de la ciudad de Medellín</p>
+            <nav>
+                <button id="inicio-btn" class="activo"  onclick="activarInicio()">Inicio</button>
+                <button id="acerca-btn" onclick="activarAcerca_de()">Acerca de</button>
+                <button id="cv-btn" onclick="activarCV()">CV</button>
+                <button id="portafolio-btn" onclick="activarPortafolio()">Portafolio</button>
+                <button id="contacto-btn" onclick="activarContacto()">Contacto</button>
+            </nav>
+            <div class="redes-sociales">
+                <a href="https://twitter.com/CarlosC41585540" target="_blant">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                <a href="https://github.com/carlos-cordoba56" target="_blant">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a href="https://www.linkedin.com/in/carlos-andr%C3%A9s-c%C3%B3rdoba-quesada-103510199/" target="_blant">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección - Acerca de -->
+    <section id="acerca-de">
+
+        <div class="contenedor">
+            <div class="seccion-titulo">
+                <h1>Acerca de</h1>
+                <p>Conozca más sobre mi.</p>
+            </div>
+
+            <div class="general">
+                <div class="foto-personal">
+                    <img src="/assets/img/me.jpg" alt="foto_personal" width="216">
+                </div>
+
+                <div class="informacion-general">
+                    <h3>Ingeniero Mecatrónico - Python Developer</h3>
+                    <p>Ingeniero mecatrónico y medio-técnico en electrónica. 
+                        Me caracterizo por ser una persona con fortaleza para tomar decisiones de forma creativa
+                         y con buena capacidad de análisis, además cuento con un gusto inmenso por aprender 
+                         y trabajar en equipo.  </p>
+                    <ul>
+                        <li>
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                            <strong>Website:</strong> www.google.com
+                        </li>
+                        <li>
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                            <strong>Telefono:</strong> +57 315 789 1638
+                        </li>
+                        <li>
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                            <strong>Ciudad:</strong> Medellín, Colombia
+                        </li>
+                        <li>
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                            <strong>Edad:</strong> 23 años
+                        </li>
+                        <li>
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                            <strong>Tipo de titulo:</strong> pregrado
+                        </li>
+                    </ul>
+                    <p>Continuar con la descripción</p>
+                </div>
+            </div>
+
+            <div class="habilidades">
+
+                <h3>Habilidades</h3>
+
+                <div class="caja-de-habilidades">
+                    <h4>Lenguajes de programación</h4>
+
+                    <div class="habilidad-barra .brillo">
+                        <div class="habilidad">Python <span>80%</span> </div>
+                        <div class="barra-de-progreso">
+                            <span style="width: 80%"></span>
+                        </div>
+                    </div>
+                    <div class="habilidad-barra">
+                        <span><label for="java">Java </label> </span>
+                        <progress id="java" max="100" value="60"> 60% </progress>
+                    </div>
+                    <div class="habilidad-barra">
+                        <span><label for="js">Javascript </label></span>
+                        <progress id="js" max="100" value="50"> 50% </progress>
+                    </div>
+                    <div class="habilidad-barra">
+                        <span><label for="ts">Typecript </label></span>
+                        <progress id="ts" max="100" value="50"> 50% </progress>
+                    </div>
+                </div>
+
+                <div class="caja-de-habilidades">
+                    <h4>Herramientas</h4>
+
+                    <div class="habilidad-barra">
+                        <span><label for="spring-boot">Spring-boot </label></span>
+                        <progress id="spring-boot" max="100" value="20"> 20% </progress>
+                    </div>
+                    <div class="habilidad-barra">
+                        <span><label for="flask">Flask </label></span>
+                        <progress id="flask" max="100" value="20"> 20% </progress>
+                    </div>
+                    <div class="habilidad-barra">
+                        <span><label for="react">React </label></span>
+                        <progress id="react" max="100" value="10"> 10% </progress>
+                    </div>
+                    
+                    <div class="habilidad-barra">
+                        <span><label for="css">CSS</label> </span>
+                        <progress id="css" max="100" value="30"> 30% </progress>
+                    </div>
+                    <div class="habilidad-barra">
+                        <span><label for="docker">Docker </label></span>
+                        <progress id="docker" max="100" value="0"> 0% </progress>
+                    </div>
+
+                    <!-- <div class="habilidad-barra">
+                        <span><label for=""></label> </span>
+                        <progress id="" max="100" value="0">  </progress>
+                    </div> -->
+                </div>
+
+            </div>
+
+            <div class="intereses"></div>
+        </div>
+
+    </section>
+
+    <!-- Sección - CV -->
+    <section id="cv">
+            
+        <div class="contenedor">
+            <div class="seccion-titulo ">
+                <h1>CV</h1>
+                <p>Curriculum Vitae</p>
+            </div>
+            <div class="resumen">
+                <h2>Perfíl profecional</h2>
+                <p>Ingeniero mecatrónico y medio-técnico en electrónica. 
+                    Me caracterizo por ser una persona con fortaleza para tomar decisiones de forma creativa
+                        y con buena capacidad de análisis, además cuento con un gusto inmenso por aprender 
+                        y trabajar en equipo.</p>
+                <p>En la parte técnica, manejo con un buen nivel varias herramientas ofimáticas 
+                        y así como varios lenguajes de programación (Python, JAVA, entre otros). 
+                        Mis áreas de interés se relacionan con: El desarrollo backend, análisis de datos 
+                        e inteligencia artificial.</p>
+            </div>
+            <div class="educacion">
+                <h4>Educación</h4>
+                <ul>
+                    <li>
+                        <h5>Universidad EIA – Escuela de Ingeniería de Antioquia</h5>
+                        <p>Enero 2016 – Julio 2021</p>
+                        <p>Formación como Ingeniero Mecatrónico</p>
+                    </li>
+                    <li>
+                        <h5>Universidad EIA – Escuela de Ingeniería de Antioquia</h5>
+                        <p>Enero 2021 – Junio 2021</p>
+                        <p>Semillero de programación Orientada a Objetos</p>
+                    </li>
+                    <li>
+                        <h5>SENA</h5>
+                        <p>Enero 2014 – Octubre 2015</p>
+                        <p>Bachiller técnico en electrónica</p>
+                    </li>
+                    <li>
+                        <h5>Colobbo-americano</h5>
+                        <p>Ciclo básico – 15 niveles</p>
+                        <p>Ciclo Habilidades Integradas – 1 nivel</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="experiencia-profecional">
+                <h4>Experiencia Laboral</h4>
+                <ul>
+                    <li>
+                        <h5>CAV Robotics – Practicante de Ingeniería</h5>
+                        <p>Enero 2020 – Mayo 2020</p>
+                        <p>El cargo consistía en el apoyo en labores de mantenimiento, y diseño y 
+                            puesta en marcha de sistema de visión para la detección de producto 
+                            faltante.
+                        </p>
+                    </li>
+                    <li>
+                        <h5>Globant – Python Developer, SSr</h5>
+                        <p>Octubre 2021 – Actual</p>
+                        <p>agregar descripción
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="descargar-cv">
+                <a href="assets/documents/CV_Carlos_Cordoba.pdf" download="CV_Carlos_Cordoba">
+                    Descargar Archivo
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Sección - Portafolio -->
+    <section id="portafolio">
+        <div class="contenedor">
+            <div class="seccion-titulo">
+                <h1>Portafolio</h1>
+                <p>Mis proyectos</p>
+            </div>
+            <menu>
+                <ul>
+                    <li>Todos</li>
+                    <li>Appps</li>
+                    <li>Juegos</li>
+                    <li>DT</li>
+                </ul>
+            </menu>
+        </div>
+        
+    </section>
+
+    <!-- Sección - Contacto -->
+    <section id="contacto">
+        <div class="contenedor">
+            <div class="seccion-titulo">
+                <h1>Contacto</h1>
+                <p>Contacteme</p>
+            </div>
+            <div class="informacion-de-contacto">
+                <div class="direccion">
+                    <h5>Dirección</h5>
+                    <p>carrera 30A N° 32A - 54</p>
+                </div>
+                <div class="redes-sociales-cont">
+                    <h5>Redes Sociales</h5>
+                    <a href="https://twitter.com/CarlosC41585540" target="_blant">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a href="https://github.com/carlos-cordoba56" target="_blant">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://www.linkedin.com/in/carlos-andr%C3%A9s-c%C3%B3rdoba-quesada-103510199/" target="_blant">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </div>
+                <div class="correo-electronico">
+                    <h5>Correo Electrónico</h5>
+                    <p>carlos.cordoba56@outlook.com</p>
+                </div>
+                <div class="telefono">
+                    <h5>Telefono</h5>
+                    <p>+57 315 789 1638</p>
+                </div>
+            </div>
+            <div class="enviar-mensaje">
+                <form>
+                    <input type="text" name='nombre' id="nombre" placeholder="Escriba su nombre">
+                    <input type="text" name='correo-e' id="correo-e" placeholder="Escriba su correro Electronico">
+                    <input type="text" name='Asunto' id="Asunto" placeholder="asunto">
+                    <input type="text" name='mensaje' id="mensaje" placeholder="mensaje">
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <script src="/assets/js/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
